@@ -1,0 +1,114 @@
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    animation: 1.5s ease 0s 1 sizeUp;
+    -moz-animation: 1.5s ease 0s 1 sizeUp;
+    -webkit-animation: 1.5s ease 0s 1 sizeUp;
+}
+
+.bubble2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    animation: 1.5s ease 0s 1 sizeUp2;
+    -moz-animation: 1.5s ease 0s 1 sizeUp2;
+    -webkit-animation: 1.5s ease 0s 1 sizeUp2;
+}
+
+@keyframes sizeUp {
+    0%{
+        transform: translate(-200%, 300%);
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        width: 230px;
+        height: 230px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes sizeUp {
+    0%{
+        transform: translate(-200%, 300%);
+        filter: blur(5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes sizeUp {
+    0%{
+        transform: translate(-200%, 300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes sizeUp2 {
+    0%{
+        transform: translate(200%, -150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes sizeUp2 {
+    0%{
+        transform: translate(200%, -150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes sizeUp2 {
+    0%{
+        transform: translate(200%, -150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .bubble {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .bubble2 {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 640px) {
+    .bubble {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .bubble2 {
+        width: 140px;
+        height: 140px;
+    }
+}

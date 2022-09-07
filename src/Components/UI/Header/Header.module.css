@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: all 0.3s ease;
+    padding: 0.2em;
+}
+
+.header.fixed {
+    width: 100%;
+    position: fixed;
+    background-color: var(--clr--d3);
+    border-bottom: 1px solid rgba(6, 197, 137, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 5;
+}

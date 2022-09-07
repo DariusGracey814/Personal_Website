@@ -1,0 +1,158 @@
+/* Navigation */
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em 0 0.5em;
+}
+
+.navMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navMenu li {
+    margin-left: 2.5em;
+}
+
+.link {
+    background: none;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--clr--light);
+    opacity: 0.9;
+    transition:  all 0.3s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.active {
+    border-bottom: 1px solid var(--clr--light);
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: 60px;
+}
+
+/* Mobile menu */
+.menuBtn {
+    justify-self: flex-end;
+    align-self: flex-start;
+    background: transparent;
+    border: none;
+    padding: 0.4em 0.5em;
+    outline: 2px solid rgba(6, 197, 137, 0.8);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 6;
+    display: none;
+}
+
+.menuBtn:hover {
+    outline: 2px solid var(--clr--green);
+}
+
+.menuBtn:hover * {
+    color: var(--clr--green);
+}
+
+.menu {
+    font-size: 1.9rem;
+    color: rgba(6, 197, 137, 0.8);
+}
+
+.close {
+    font-size: 1.7rem;
+    color: var(--clr--light);
+}
+
+@media (max-width: 900px) {
+    .logo {
+        width: 110px;
+        height: 60px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav {
+        padding: 1.5em 0 0.5em;
+    }
+
+    .menuBtn{
+        display: flex;
+        position: relative;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 51.6%;
+        height: 85vh;
+        background: #05b17b;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(1000px);
+        transition: all 0.5s ease;
+    }
+
+    .navMenu.show {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .menuBtn.show {
+        outline: none;
+    }
+
+    .menuBtn.show * {
+        color: var(--clr--light);
+    }
+
+    .navMenu li {
+        margin-left: 0;
+        padding: 0.5em 0;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navMenu li a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .logo {
+        width: 80px;
+        height: 45px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .navMenu {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .menu {
+        font-size: 1.5rem;
+    }
+}

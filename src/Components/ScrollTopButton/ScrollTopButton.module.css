@@ -1,0 +1,47 @@
+.scroll-btn {
+    position: fixed;
+    opacity: 0;
+    bottom: 1em;
+    right: 1.5em;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn.show {
+    opacity: 0.3;
+}
+
+.scroll-btn:hover {
+    opacity: 1;
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: var(--clr--green);
+}
+
+@media (max-width: 800px) {
+    .scroll-btn.show {
+        opacity: 0.8;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-btn {
+        position: fixed;
+        bottom: 1em;
+        right: 0.8em;
+        padding: 0;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
