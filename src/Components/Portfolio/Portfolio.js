@@ -8,6 +8,7 @@ import chimeLanding from '../../Assets/chimeLanding.png';
 import chimePromotion from '../../Assets/chimePromotional.png';
 import emailNewsletter from '../../Assets/emailsNewsletter.png';
 import udemyReceipt from '../../Assets/udemyReciept.png';
+import sheinPromotion from '../../Assets/Shein-port.png';
 
 function Portfolio({ setWork }) {
   const portfolio = useRef(null);
@@ -41,6 +42,62 @@ function Portfolio({ setWork }) {
                         <div className={classes['img-wrapper']}>
                             <LazyLoadImage
                             className={classes['portfolio-img']}
+                            src={sheinPromotion}
+                            alt="shein promotional email"
+                            width="100%"
+                            height="auto"
+                            effect="blur"
+                            />
+                        </div>
+
+                        <h2 className={classes['portfolio-h2']}>Shein Clothing Promotional Email</h2>
+
+                        <p className={classes['portfolio-text']}>Remade a responsive Shein promotional email by using HTML, CSS, VML & MJML Framework.</p>
+
+                        <div className={classes['btn-wrapper']}>
+                            <a href="https://shein-promotional-email.netlify.app/" target="_blank" className={classes.mb}>
+                                <button type="button" className={`${classes['portfolio-btn']} blue`}>View Project</button>
+                            </a>
+
+                            <a href="https://github.com/DariusGracey814/Shein-Promotional-Email" target="_blank">
+                                <button type="button" className={`${classes['portfolio-btn']}`}>View Code</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className={classes['portfolio-content']}>
+                        <div className={classes['img-wrapper']}>
+                            <LazyLoadImage
+                            className={classes['portfolio-img']}
+                            src={chimePromotion}
+                            alt="chime landing page"
+                            width="100%"
+                            height="auto"
+                            effect="blur"
+                            />   
+                        </div>
+
+                        <h2 className={classes['portfolio-h2']}>Chime Newsletter Email</h2>
+
+                        <p className={classes['portfolio-text']}>Remade a responsive Chime newsletter email by using HTML, CSS, VML & MJML Framework.</p>
+
+                        <div className={classes['btn-wrapper']}>
+                            <a href="https://chime-promotional-email.netlify.app/" target="_blank" className={classes.mb}>
+                                <button type="button" className={`${classes['portfolio-btn']} blue`}>View Project</button>
+                            </a>
+
+                            <a href="https://github.com/DariusGracey814/Chime-Promtional-Html-Email" target="_blank">
+                                <button type="button" className={`${classes['portfolio-btn']}`}>View Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`${classes.emails}`}>
+                    <div className={classes['portfolio-content']}>
+                        <div className={classes['img-wrapper']}>
+                            <LazyLoadImage
+                            className={classes['portfolio-img']}
                             src={chimeLanding}
                             alt="chime landing page"
                             width="100%"
@@ -65,35 +122,6 @@ function Portfolio({ setWork }) {
                     </div>
 
                     <div className={classes['portfolio-content']}>
-                        <div className={classes['img-wrapper']}>
-                            <LazyLoadImage
-                            className={classes['portfolio-img']}
-                            src={chimePromotion}
-                            alt="chime landing page"
-                            width="100%"
-                            height="auto"
-                            effect="blur"
-                            />   
-                        </div>
-
-                        <h2 className={classes['portfolio-h2']}>Chime Promotional Email</h2>
-
-                        <p className={classes['portfolio-text']}>Remade a responsive Chime promotional email by using HTML, CSS, and Outlook Conditional Css</p>
-
-                        <div className={classes['btn-wrapper']}>
-                            <a href="https://chime-promotional-email.netlify.app/" target="_blank" className={classes.mb}>
-                                <button type="button" className={`${classes['portfolio-btn']} blue`}>View Project</button>
-                            </a>
-
-                            <a href="https://github.com/DariusGracey814/Chime-Promtional-Html-Email" target="_blank">
-                                <button type="button" className={`${classes['portfolio-btn']}`}>View Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={`${classes.emails}`}>
-                    <div className={classes['portfolio-content']}>
                             <div className={classes['img-wrapper']}>
                                 <LazyLoadImage
                                 className={classes['portfolio-img']}
@@ -105,9 +133,9 @@ function Portfolio({ setWork }) {
                                 />
                             </div>
 
-                            <h2 className={classes['portfolio-h2']}>Email on Acid Newsletter Email</h2>
+                            <h2 className={classes['portfolio-h2']}>Email on Acid Promotional Email</h2>
 
-                            <p className={classes['portfolio-text']}>Remade a responsive Emails an Acid newsletter email by using HTML, CSS, and Outlook Conditional Css</p>
+                            <p className={classes['portfolio-text']}>Remade a promotional Emails an Acid newsletter email by using HTML, CSS, VML & MJML Framework.</p>
 
                             <div className={classes['btn-wrapper']}>
                                 <a href="https://emails-on-acid-newsletter.netlify.app/" target="_blank" className={classes.mb}>
@@ -119,7 +147,9 @@ function Portfolio({ setWork }) {
                                 </a>
                             </div>
                     </div>
+                </div>
 
+                <div className={`${classes.emails}`}>
                     <div className={classes['portfolio-content']}>
                         <div className={classes['img-wrapper']}>
                             <LazyLoadImage
@@ -134,7 +164,7 @@ function Portfolio({ setWork }) {
 
                         <h2 className={classes['portfolio-h2']}>Udemy Receipt Email</h2>
 
-                        <p className={classes['portfolio-text']}>Remade a responsive Udemy receipt email by using HTML, CSS, and Outlook Conditional Css</p>
+                        <p className={classes['portfolio-text']}>Remade a responsive Udemy receipt email by using HTML, CSS, VML & MJML Framework.</p>
 
                         <div className={classes['btn-wrapper']}>
                             <a href="https://udemy-reciept.netlify.app/" target="_blank" className={classes.mb}>
