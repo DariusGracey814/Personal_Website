@@ -22,11 +22,7 @@ function About({ heroIntersecting, setAbout }) {
                     <h1>About Me</h1>
                     
                     <p>
-                    Hello! My name is Darius, I am a student looking to put my skills to use. I am self motivated, punctual, reliable, and have problem- solving skills. <span>Details are paid close attention to</span> when translating design mockups into HTML email documents. 
-                    </p>
-
-                    <p>
-                      I am passionate about gaining knowledge, experience and improving on my skills. I have an extensive working knowledge of Html, Css, JavaScript, Bootstrap, Sass, React, Mailchimp, Klaviyo, Acid on Emails, Litmus, Outlook Conditional Css, Photoshop and Sketch. 
+                    Hello! My name is Darius, I am a student looking to put my skills to use. I am self motivated, punctual, reliable, a great team player, and I love solving problems. Details are paid close attention to when translating design mockups into <span>eye pleasing responsive web applications.</span> 
                     </p>
                 </div>
 

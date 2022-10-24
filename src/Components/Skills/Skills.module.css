@@ -1,7 +1,6 @@
 .skills {
     width: 100%;
     overflow: hidden;
-
 }
 
 .skills h1 {
@@ -11,7 +10,7 @@
 }
 
 .skills-container{
-    padding: 3em 0;
+    padding: 5em 0;
 
     transform: translateX(1500px);
     opacity: 0;
@@ -47,11 +46,6 @@
     transition: all 0.3s ease;
 }
 
-.icon-box:hover,
-.additional-skills:hover {
-    transform: scale(1.05);
-}
-
 .icon {
     font-size: 4rem;
 }
@@ -62,7 +56,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 1em;
+    margin-top: 1.3em;
     background-color: #e9ebed;
 
     display: flex;
@@ -73,12 +67,11 @@
 .textRedux {
     width: 100%;
     height: 50px;
-    margin: 1.2em 0 -0.35em;
+    margin: 1.3em 0 -0.35em;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 1em;
-    background-color: #fff;
+    
 
     display: flex;
     align-items: center;
@@ -149,12 +142,13 @@
     padding: 0;
     margin: 0;
     color: var(--clr--light);
+    list-style: none;
 }
 
 .textA {
     width: 100%;
     height: 50px;
-    margin-top: 1.1em;
+    margin-top: 1.5em;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;

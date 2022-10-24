@@ -100,8 +100,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 51.6%;
-        height: 85vh;
+        width: 100%;
+        height: 100vh;
         background: #05b17b;
         display: none;
         flex-direction: column;

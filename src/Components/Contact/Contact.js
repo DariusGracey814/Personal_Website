@@ -11,7 +11,7 @@ function Contact({ setContact }) {
   }, []);
 
   return (
-    <section className={`${classes.contact} ${classes.parallax}`} ref={contactSection}>
+    <section className={classes.contact} ref={contactSection}>
         <Container>
             <div className={classes['contact-wrapper']}>
                 <h1>Contact Me</h1>

@@ -33,7 +33,7 @@ function Skills({ setSkills }) {
     <section id="skills" className={classes.skills} ref={skillsSection}>
         <ContainerMd>
             <div className={`${classes['skills-container']} ${!skillsActive ? null : classes.active}`}>
-               <h1>Coding | Design Skills</h1>
+               <h1>My Skills</h1>
 
                <div className={classes['skills-wrapper']}>
                     <div className={`${classes['icon-box']} ${classes.htmlBox}`}>
@@ -66,22 +66,17 @@ function Skills({ setSkills }) {
                         <div className={classes.text}>React</div>
                     </div>
 
-                    <div className={`${classes['additional-skills']}`}>
-                        <ul>
-                            <li>Photoshop / Sketch</li>
-                            <li>Mailchimp / Klaviyo</li>
-                            <li>Litmus / Emails on Acid</li>
-                            <li>Imgbb / Putsmail</li>
-                        </ul>
-                        <div className={classes.textA}>Additional Skills</div>
+                    <div className={`${classes['icon-box']}`}>
+                       <img src={redux} alt="redux logo" width="70" height="60" />
+                       <div className={`${classes.textRedux} ${classes.reduxBox}`}>Redux & Redux/toolkit</div>
                     </div>
 
                     <div className={`${classes['additional-skills']}`}>
                         <ul>
-                            <li>Outlook Conditional Css</li>
-                            <li>Accessibility</li>
-                            <li>WCAG Compliance</li>
-                            <li>Optimization</li>
+                            <li>- Next Js</li>
+                            <li>- TypeScript</li>
+                            <li>- PHP/MYSQL</li>
+                            <li>- OOP</li>
                         </ul>
                         <div className={classes.textA}>Additional Skills</div>
                     </div>

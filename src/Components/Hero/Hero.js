@@ -73,7 +73,7 @@ function Hero({ setHeroIntersecting, work }) {
                 <h1>Darius Gracey</h1>
                 <h2>I build things for the web.</h2>
                 <p className={classes['intro-text']}>
-                   I'm a HTML email Developer / Front End Web Developer based in Michigan. I enjoy building beautiful<span> responsive emails and websites</span> 
+                   I'm a Web Developer based in Michigan. I enjoy solving problems and  building beautiful<span> responsive, user-friendly applications</span> 
                 </p>
 
             <div className={classes['hero-buttons']}> 
