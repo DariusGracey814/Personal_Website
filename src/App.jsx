@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 // Components
-import Header from './Components/UI/Header/Header';
-import Home from './Pages/Home';
-import LoadingSpinner from './Components/LoadingSpinner/LoadingSpinner';
-import ScrollTopButton from './Components/ScrollTopButton/ScrollTopButton';
+import Header from "./Components/UI/Header/Header";
+import Home from "./Pages/Home";
+import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
+import ScrollTopButton from "./Components/ScrollTopButton/ScrollTopButton";
+import HerbalStoner from "./Pages/HerbalStoner";
+import Footer from "./Components/UI/Footer/Footer";
 
 // Stylesheet
-import './App.css';
+import "./App.css";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -29,21 +31,42 @@ function App() {
 
   return (
     <>
-      {load ? <LoadingSpinner /> : 
-      <div className="App">
-        <Router>
-            <Header setShow={setShow} heroIntersecting={heroIntersecting} about={about} skills={skills} work={work} contact={contact} />
-            <div className={!show ? null : 'menu-overlay'}></div>
+      {load ? (
+        <LoadingSpinner />
+      ) : (
+        <main className="App">
+          <Header
+            setShow={setShow}
+            heroIntersecting={heroIntersecting}
+            about={about}
+            skills={skills}
+            work={work}
+            contact={contact}
+          />
+          <div className={!show ? null : "menu-overlay"}></div>
 
-            <Routes>
-                <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="/home" element={<Home heroIntersecting={heroIntersecting} setHeroIntersecting={setHeroIntersecting} setAbout={setAbout} setSkills={setSkills} setWork={setWork} setContact={setContact} work={work} />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route
+              path="/home"
+              element={
+                <Home
+                  heroIntersecting={heroIntersecting}
+                  setHeroIntersecting={setHeroIntersecting}
+                  setAbout={setAbout}
+                  setSkills={setSkills}
+                  setWork={setWork}
+                  setContact={setContact}
+                  work={work}
+                />
+              }
+            />
+            <Route path="/herbal-stoner-project" element={<HerbalStoner />} />
+          </Routes>
 
-            <ScrollTopButton heroIntersecting={heroIntersecting} />
-        </Router>
-      </div>
-      }
+          <ScrollTopButton heroIntersecting={heroIntersecting} />
+        </main>
+      )}
     </>
   );
 }
