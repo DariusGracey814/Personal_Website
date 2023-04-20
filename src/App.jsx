@@ -7,7 +7,6 @@ import Home from "./Pages/Home";
 import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 import ScrollTopButton from "./Components/ScrollTopButton/ScrollTopButton";
 import HerbalStoner from "./Pages/HerbalStoner";
-import Footer from "./Components/UI/Footer/Footer";
 
 // Stylesheet
 import "./App.css";

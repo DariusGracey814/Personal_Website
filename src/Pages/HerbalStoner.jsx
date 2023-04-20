@@ -1,11 +1,17 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import classes from "./HerbalStoner.module.css";
 import image from "../Assets/extracts_pagge.png";
 
 function HerbalStoner() {
   return (
     <section className={classes["herbal-section"]}>
+      <div className={classes["goBack-wrapper"]}>
+        <Link to="/home" className={`${classes.goBack} green`}>
+          Go Back
+        </Link>
+      </div>
+
       <h1 className={classes["herbal-h1"]}>
         Herbal Stoners &mdash; FullStack Project
       </h1>
@@ -56,8 +62,10 @@ function HerbalStoner() {
             <li>return customer stripe checkout url</li>
             <li>Generate success and cancel stripe url</li>
             <li>Perform Unit and Integration tests (TDD)</li>
+            <li>Connect Frontend to Backend</li>
             <li>Deploy Frontend to Firebase</li>
             <li>Deploy Backend Express Api to Render</li>
+            <li>Ensure website is fully responsive</li>
           </ul>
         </div>
       </div>
