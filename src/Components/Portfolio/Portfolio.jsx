@@ -73,7 +73,7 @@ function Portfolio({ setWork }) {
                 </Link>
 
                 <a
-                  href="https://github.com/DariusGracey814/Shein-Promotional-Email"
+                  href="https://github.com/DariusGracey814/Herbal_Stoners_Application"
                   target="_blank"
                 >
                   <button
