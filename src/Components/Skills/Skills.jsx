@@ -1,128 +1,153 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 // Components
-import ContainerMd from '../UI/Container/Container';
-import redux from '../../Assets/redux.png';
+import ContainerMd from "../UI/Container/Container";
+import redux from "../../Assets/redux.png";
 
 // Stylesheet
-import classes from './Skills.module.css';
+import classes from "./Skills.module.css";
 
-function Skills({ setSkills }) { 
+function Skills({ setSkills }) {
   const [skillsActive, setSkillsActive] = useState(false);
   const skillsSection = useRef();
 
   const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.6
-  }
+    rootMargin: "0px",
+    threshold: 0.6,
+  };
 
   useEffect(() => {
     setSkills(skillsSection.current);
     const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setSkillsActive(entry.isIntersecting);
-    }, options)
+      const entry = entries[0];
+      setSkillsActive(entry.isIntersecting);
+    }, options);
 
     observer.observe(skillsSection.current);
-    
   }, []);
-
 
   return (
     <section id="skills" className={classes.skills} ref={skillsSection}>
-        <ContainerMd>
-            <div className={`${classes['skills-container']} ${!skillsActive ? null : classes.active}`}>
-               <h1>My Skills</h1>
+      <ContainerMd>
+        <div
+          className={`${classes["skills-container"]} ${
+            !skillsActive ? null : classes.active
+          }`}
+        >
+          <h1>My Skills</h1>
 
-               <div className={classes['skills-wrapper']}>
-                    <div className={`${classes['icon-box']} ${classes.htmlBox}`}>
-                        <i className={`fa-brands fa-html5 ${classes.icon} ${classes.html}`}></i>
-                        <div className={classes.text}>Html</div>
-                    </div>
-
-                    <div className={`${classes['icon-box']} ${classes.cssBox}`}>
-                        <i className={`fa-brands fa-css3-alt ${classes.icon} ${classes.css}`}></i>
-                        <div className={classes.text}>Css</div>
-                    </div>
-
-                    <div className={`${classes['icon-box']} ${classes.jsBox}`}>
-                        <i className={`fa-brands fa-js ${classes.icon} ${classes.js}`}></i>
-                        <div className={classes.text}>Javascript</div>
-                    </div>
- 
-                    <div className={`${classes['icon-box']} ${classes.sassBox}`}>
-                        <i className={`fa-brands fa-sass ${classes.icon} ${classes.sass}`}></i>
-                        <div className={classes.text}>Sass</div>
-                    </div>
-
-                    <div className={`${classes['icon-box']} ${classes.bootstrapBox}`}>
-                        <i className={`fa-brands fa-bootstrap ${classes.icon} ${classes.bootstrap}`}></i>
-                        <div className={classes.text}>Bootstrap</div>
-                    </div>
-
-                    <div className={`${classes['icon-box']} ${classes.reactBox}`}>
-                        <i className={`fa-brands fa-react ${classes.icon} ${classes.react}`}></i>
-                        <div className={classes.text}>React</div>
-                    </div>
-
-                    <div className={`${classes['icon-box']}`}>
-                       <img src={redux} alt="redux logo" width="70" height="60" />
-                       <div className={`${classes.textRedux} ${classes.reduxBox}`}>Redux & Redux/toolkit</div>
-                    </div>
-
-                    <div className={`${classes['additional-skills']}`}>
-                        <ul>
-                            <li>- Next Js</li>
-                            <li>- TypeScript</li>
-                            <li>- PHP/MYSQL</li>
-                            <li>- OOP</li>
-                        </ul>
-                        <div className={classes.textA}>Additional Skills</div>
-                    </div>
-               </div>
+          <div className={classes["skills-wrapper"]}>
+            <div className={`${classes["icon-box"]} ${classes.htmlBox}`}>
+              <i
+                className={`fa-brands fa-html5 ${classes.icon} ${classes.html}`}
+              ></i>
+              <div className={classes.text}>Html</div>
             </div>
 
-            <div className={`${classes.workflow}`}>
-                <div className={`${classes['h2-wrapper']}`}>
-                    <h2>Work Process</h2>
-                </div>
-
-                <div className={`${classes.progressFlow}`}>
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-message"></i>
-                        <p>Discover</p>
-                    </div>
-
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-lightbulb"></i>
-                        <p>Idea</p>
-                    </div>
-
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-compass-drafting"></i>
-                        <p>Design</p>
-                    </div>
-
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-compass-drafting"></i>
-                        <p>Develop</p>
-                    </div>
-
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-file-code"></i>
-                        <p>Test</p>
-                    </div>
-
-                    <div className={classes.progress}>
-                        <i className="fa-solid fa-rocket"></i>
-                        <p>Launch</p>
-                    </div>
-                </div>
+            <div className={`${classes["icon-box"]} ${classes.cssBox}`}>
+              <i
+                className={`fa-brands fa-css3-alt ${classes.icon} ${classes.css}`}
+              ></i>
+              <div className={classes.text}>Css</div>
             </div>
-        </ContainerMd>
+
+            <div className={`${classes["icon-box"]} ${classes.jsBox}`}>
+              <i
+                className={`fa-brands fa-js ${classes.icon} ${classes.js}`}
+              ></i>
+              <div className={classes.text}>Javascript</div>
+            </div>
+
+            <div className={`${classes["icon-box"]} ${classes.sassBox}`}>
+              <i
+                className={`fa-brands fa-sass ${classes.icon} ${classes.sass}`}
+              ></i>
+              <div className={classes.text}>Sass</div>
+            </div>
+
+            <div className={`${classes["icon-box"]} ${classes.bootstrapBox}`}>
+              <i
+                className={`fa-brands fa-bootstrap ${classes.icon} ${classes.bootstrap}`}
+              ></i>
+              <div className={classes.text}>Bootstrap</div>
+            </div>
+
+            <div className={`${classes["icon-box"]} ${classes.reactBox}`}>
+              <i
+                className={`fa-brands fa-react ${classes.icon} ${classes.react}`}
+              ></i>
+              <div className={classes.text}>React</div>
+            </div>
+
+            <div className={`${classes["icon-box"]}`}>
+              <img src={redux} alt="redux logo" width="70" height="60" />
+              <div className={`${classes.textRedux} ${classes.reduxBox}`}>
+                Redux
+              </div>
+            </div>
+
+            <div className={`${classes["additional-skills"]}`}>
+              <ul className={classes.list}>
+                <li>- TypeScript</li>
+                <li>- Node</li>
+                <li>- Express</li>
+                <li>- MYSQL/Mongo DB</li>
+              </ul>
+              <div className={classes.textA}>Additional Skills</div>
+            </div>
+
+            <div className={`${classes["additional-skills"]}`}>
+              <ul className={classes.list}>
+                <li>- Java</li>
+                <li>- Spring Framework</li>
+                <li>- Spring Boot</li>
+              </ul>
+              <div className={classes.textA}>Additional Skills</div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${classes.workflow}`}>
+          <div className={`${classes["h2-wrapper"]}`}>
+            <h2>Work Process</h2>
+          </div>
+
+          <div className={`${classes.progressFlow}`}>
+            <div className={classes.progress}>
+              <i className="fa-solid fa-message"></i>
+              <p>Discover</p>
+            </div>
+
+            <div className={classes.progress}>
+              <i className="fa-solid fa-lightbulb"></i>
+              <p>Idea</p>
+            </div>
+
+            <div className={classes.progress}>
+              <i className="fa-solid fa-compass-drafting"></i>
+              <p>Design</p>
+            </div>
+
+            <div className={classes.progress}>
+              <i className="fa-solid fa-compass-drafting"></i>
+              <p>Develop</p>
+            </div>
+
+            <div className={classes.progress}>
+              <i className="fa-solid fa-file-code"></i>
+              <p>Test</p>
+            </div>
+
+            <div className={classes.progress}>
+              <i className="fa-solid fa-rocket"></i>
+              <p>Launch</p>
+            </div>
+          </div>
+        </div>
+      </ContainerMd>
     </section>
   );
-};
+}
 
 export default Skills;
