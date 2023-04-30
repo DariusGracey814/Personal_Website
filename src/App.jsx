@@ -7,6 +7,8 @@ import Home from "./Pages/Home";
 import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 import ScrollTopButton from "./Components/ScrollTopButton/ScrollTopButton";
 import HerbalStoner from "./Pages/HerbalStoner";
+import PlanetPreserve from "./Pages/PlanetPreserve";
+import BudgetlyApp from "./Pages/BudgetlyApp";
 
 // Stylesheet
 import "./App.css";
@@ -61,6 +63,14 @@ function App() {
               }
             />
             <Route path="/herbal-stoner-project" element={<HerbalStoner />} />
+            <Route
+              path="/planet-preserve-project"
+              element={<PlanetPreserve />}
+            />
+            <Route
+              path="/budgetly-budget-application"
+              element={<BudgetlyApp />}
+            />
           </Routes>
 
           <ScrollTopButton heroIntersecting={heroIntersecting} />

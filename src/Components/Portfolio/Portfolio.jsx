@@ -5,8 +5,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import Container from "../UI/Container/Container";
 import classes from "./Portfolio.module.css";
-import chimeLanding from "../../Assets/chimeLanding.png";
-import chimePromotion from "../../Assets/chimePromotional.png";
+import BudgetTeam from "../../Assets/BudgetTeam.png";
+import PlanetPreserveLaptop from "../../Assets/PlanetPreserveLaptop.png";
 import emailNewsletter from "../../Assets/emailsNewsletter.png";
 import extracts from "../../Assets/herbalExtracts.png";
 
@@ -86,12 +86,13 @@ function Portfolio({ setWork }) {
               </div>
             </div>
 
+            {/* Planet Preserve */}
             <div className={classes["portfolio-content"]}>
               <div className={classes["img-wrapper"]}>
                 <LazyLoadImage
                   className={classes["portfolio-img"]}
-                  src={chimePromotion}
-                  alt="chime landing page"
+                  src={PlanetPreserveLaptop}
+                  alt="planet preserve"
                   width="100%"
                   height="auto"
                   effect="blur"
@@ -99,27 +100,24 @@ function Portfolio({ setWork }) {
               </div>
 
               <h2 className={classes["portfolio-h2"]}>
-                Chime Newsletter Email
+                Planet Preserve - Eco Contribution Tracker
               </h2>
 
               <p className={classes["portfolio-text"]}>
-                Remade a responsive Chime newsletter email by using HTML, CSS,
-                VML & MJML Framework.
+                Planet Preserve an Eco Contribution Tracker allows people
+                interested in saving the environment to track and view eco
+                contributions around them
               </p>
 
               <div className={classes["btn-wrapper"]}>
-                <a
-                  href="https://chime-promotional-email.netlify.app/"
-                  target="_blank"
-                  className={classes.mb}
-                >
+                <Link to="/planet-preserve-project" className={classes.mb}>
                   <button
                     type="button"
                     className={`${classes["portfolio-btn"]} blue`}
                   >
                     View Project
                   </button>
-                </a>
+                </Link>
 
                 <a
                   href="https://github.com/DariusGracey814/Chime-Promtional-Html-Email"
@@ -141,7 +139,7 @@ function Portfolio({ setWork }) {
               <div className={classes["img-wrapper"]}>
                 <LazyLoadImage
                   className={classes["portfolio-img"]}
-                  src={chimeLanding}
+                  src={BudgetTeam}
                   alt="chime landing page"
                   width="100%"
                   height="auto"
@@ -149,78 +147,28 @@ function Portfolio({ setWork }) {
                 />
               </div>
 
-              <h2 className={classes["portfolio-h2"]}>Chime Landing Page</h2>
-
-              <p className={classes["portfolio-text"]}>
-                Remade a responsive landing page by using HTML, CSS, and
-                JavaScript
-              </p>
-
-              <div className={classes["btn-wrapper"]}>
-                <a
-                  href="https://chime-landing-page.netlify.app/"
-                  target="_blank"
-                  className={classes.mb}
-                >
-                  <button
-                    type="button"
-                    className={`${classes["portfolio-btn"]} blue`}
-                  >
-                    View Project
-                  </button>
-                </a>
-
-                <a
-                  href="https://github.com/DariusGracey814/Chime-Landing-page"
-                  target="_blank"
-                >
-                  <button
-                    type="button"
-                    className={`${classes["portfolio-btn"]}`}
-                  >
-                    View Code
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className={classes["portfolio-content"]}>
-              <div className={classes["img-wrapper"]}>
-                <LazyLoadImage
-                  className={classes["portfolio-img"]}
-                  src={emailNewsletter}
-                  alt="emails on acid newsletter"
-                  width="100%"
-                  height="auto"
-                  effect="blur"
-                />
-              </div>
-
               <h2 className={classes["portfolio-h2"]}>
-                Email on Acid Promotional Email
+                Budgetly Budget Tracker
               </h2>
 
               <p className={classes["portfolio-text"]}>
-                Remade a promotional Emails an Acid newsletter email by using
-                HTML, CSS, VML & MJML Framework.
+                Budgetly allows you to easily manage and track your budgets and
+                expenses while generating expense reports and offer data
+                visualization
               </p>
 
               <div className={classes["btn-wrapper"]}>
-                <a
-                  href="https://emails-on-acid-newsletter.netlify.app/"
-                  target="_blank"
-                  className={classes.mb}
-                >
+                <Link to="/budgetly-budget-application" className={classes.mb}>
                   <button
                     type="button"
                     className={`${classes["portfolio-btn"]} blue`}
                   >
                     View Project
                   </button>
-                </a>
+                </Link>
 
                 <a
-                  href="https://github.com/DariusGracey814/Emails-on-Acid-Newsletter-Html-Email"
+                  href="https://github.com/DariusGracey814/Chime-Landing-page"
                   target="_blank"
                 >
                   <button
